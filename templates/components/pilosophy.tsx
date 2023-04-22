@@ -27,7 +27,7 @@ export default function Philosophy() {
                 <AccordionItemHeading>
                     <AccordionItemButton>
                         <div className={style.PhilosophyHtitle}>
-                            <h4> Why is my profesion important </h4>
+                            <h4> What do i think about web development industry </h4>
                         </div>
                     </AccordionItemButton>
                 </AccordionItemHeading>
@@ -43,7 +43,7 @@ export default function Philosophy() {
                 <AccordionItemHeading>
                     <AccordionItemButton>
                         <div className={style.PhilosophyHtitle}>
-                            <h4> Why is my profesion important </h4>
+                            <h4> How do i Treat Other proffessional </h4>
                         </div>
                     </AccordionItemButton>
                 </AccordionItemHeading>
@@ -59,7 +59,7 @@ export default function Philosophy() {
                 <AccordionItemHeading>
                     <AccordionItemButton>
                         <div className={style.PhilosophyHtitle}>
-                            <h4> Why is my profesion important </h4>
+                            <h4> Which of my skill help me thrive in my work </h4>
                         </div>
                     </AccordionItemButton>
                 </AccordionItemHeading>

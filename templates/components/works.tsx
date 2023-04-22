@@ -1,9 +1,9 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import style from '@styles/Body.module.scss'
 import { useEffect, useRef } from "react";
-import patriot from '@assets/patriot.png' 
+import patriot from '@assets/phthumb.png' 
 import mainpatriot from '@assets/mainpatriot.png' 
-import primitive from '@assets/primitivelife.png' 
+import primitive from '@assets/pllthumb.png' 
 import mainprimitive from '@assets/mainprimitive.png' 
 import Image from "next/image";
 import React from "react";
@@ -68,11 +68,11 @@ export default class Works extends React.Component<{}> {
                 </div>
                 <div className={style.WorksThumbnail}>
                     <Splide 
-                    ref={this.thumbnailsplide}
+                    ref={this.thumbnailsplide} 
                     options={{
                         rewind: true,
-                        fixedWidth: 300,
-                        fixedHeight: 150,
+                        fixedWidth: 288,
+                        fixedHeight: 105,
                         isNavigation: true,
                         gap: 10,
                         focus: 'center',
@@ -89,7 +89,7 @@ export default class Works extends React.Component<{}> {
                             },
                         },
                     }}>
-                        <SplideSlide>
+                        <SplideSlide >
                             <Image src={patriot} alt="patriot"/>
                         </SplideSlide>
                         <SplideSlide>
