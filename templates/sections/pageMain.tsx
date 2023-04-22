@@ -7,14 +7,15 @@ import FullBody from '@templates/fullbodyPicture'
 import AboutRow from '@templates/layout/aboutRow'
 import AboutDetail from '@templates/aboutDetail'
 import Philosophy from '@templates/pilosophy'
+import Works from '@templates/works'
 
 export default function PageMain() {
   const alignCenter = { display: 'flex', alignItems: 'center' }
 
     return (
         < >
-            <Parallax pages={4}>
-                <ParallaxLayer offset={0} speed={0.5} style={{ ...alignCenter, justifyContent: 'center', border: '1px solid red' }}>
+            <Parallax pages={5}>
+                <ParallaxLayer offset={0} speed={0.5} style={{ ...alignCenter, justifyContent: 'center' }}>
                     <PageHead />
                 </ParallaxLayer>
 
@@ -24,7 +25,7 @@ export default function PageMain() {
                     </AboutRow>
                 </ParallaxLayer>
 
-                <ParallaxLayer offset={1} speed={1.5} style={{ ...alignCenter, justifyContent: 'flex-end',border: '1px solid red' }}>
+                <ParallaxLayer offset={1} speed={1.5} style={{ ...alignCenter, justifyContent: 'flex-end' }}>
                     <AboutRow content={true} >
                         <AboutDetail />
                     </AboutRow>
@@ -36,8 +37,12 @@ export default function PageMain() {
                     </AboutRow>
                 </ParallaxLayer>
 
-                <ParallaxLayer sticky={{ start: 3, end: 4 }} style={{ ...alignCenter, justifyContent: 'flex-end' }}>
-                    <PageFoot /> 
+                <ParallaxLayer offset={2.9} style={{ ...alignCenter, justifyContent: 'flex-end' }}>
+                    <Works /> 
+                </ParallaxLayer> 
+
+                <ParallaxLayer sticky={{ start: 4, end: 5 }} style={{ ...alignCenter, justifyContent: 'flex-end' }}>
+                    <PageFoot />
                 </ParallaxLayer> 
             </Parallax>
         </ >

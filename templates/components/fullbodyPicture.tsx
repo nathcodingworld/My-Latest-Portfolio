@@ -1,5 +1,5 @@
 
-import style from '@styles/About.module.scss'
+import style from '@styles/Body.module.scss'
 
 export default function FullBody() {
     return (

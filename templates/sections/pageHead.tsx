@@ -11,7 +11,7 @@ import {ParallaxLayer } from '@react-spring/parallax'
 export default function PageHead ( ) {  
     return(  
         <header className={style.Header} > 
-            <div className={classes([style.Head, style.container])}>
+            <div className={style.Head}>
                 <Navigation />
                 <HeadTitle />
             </div>

@@ -1,6 +1,6 @@
 
 import { Accordion, AccordionItem,  AccordionItemButton, AccordionItemHeading,  AccordionItemPanel } from 'react-accessible-accordion'; 
-import style from '@styles/About.module.scss'
+import style from '@styles/Body.module.scss'
 
 
 export default function Philosophy() {
