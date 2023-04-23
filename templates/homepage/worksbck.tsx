@@ -2,13 +2,13 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import style from '@styles/Body.module.scss'
 import { useEffect, useRef } from "react";
 import patriot from '@assets/phthumb.png' 
-import mainpatriot from '@assets/mainpatriot.png' 
 import primitive from '@assets/pllthumb.png' 
+import mainpatriot from '@assets/mainpatriot.png' 
 import mainprimitive from '@assets/mainprimitive.png' 
 import Image from "next/image";
 import React from "react";
 
-export default class Works extends React.Component<{}> {
+export default class Worksbck extends React.Component<{}> {
     mainsplide =  React.createRef<Splide>()
     thumbnailsplide = React.createRef<Splide>() 
     componentDidMount(): void  {

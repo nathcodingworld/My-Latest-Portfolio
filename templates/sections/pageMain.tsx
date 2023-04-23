@@ -7,15 +7,16 @@ import FullBody from '@templates/fullbodyPicture'
 import AboutRow from '@templates/layout/aboutRow'
 import AboutDetail from '@templates/aboutDetail'
 import Philosophy from '@templates/pilosophy'
-import Works from '@templates/works'
-import Refference from '../components/refferences'
+import Works from '@basepath/templates/homepage/works'
+import Refference from '@templates/refferences'
+import Tests from '../homepage/test'
 
 export default function PageMain() {
   const alignCenter = { display: 'flex', alignItems: 'center' }
 
     return (
         < >
-            <Parallax pages={6}>
+            <Parallax pages={7}>
                 <ParallaxLayer offset={0} speed={0.5} style={{ ...alignCenter, justifyContent: 'center' }}>
                     <PageHead />
                 </ParallaxLayer>
@@ -38,15 +39,19 @@ export default function PageMain() {
                     </AboutRow>
                 </ParallaxLayer>
 
-                <ParallaxLayer offset={2.9} style={{ ...alignCenter, justifyContent: 'flex-end' }}>
+                <ParallaxLayer sticky={{ start: 2.9, end: 3.2 }} style={{ ...alignCenter, justifyContent: 'flex-end' }}>
                     <Works /> 
                 </ParallaxLayer> 
 
-                <ParallaxLayer offset={3.9} style={{ ...alignCenter, justifyContent: 'flex-end' }}>
+                <ParallaxLayer offset={4.2} style={{ ...alignCenter, justifyContent: 'flex-end' }}>
                     <Refference /> 
                 </ParallaxLayer> 
 
-                <ParallaxLayer sticky={{ start: 4.9, end: 6 }} style={{ ...alignCenter, justifyContent: 'flex-end' }}>
+                <ParallaxLayer sticky={{ start: 5.2, end: 6 }} style={{ ...alignCenter, justifyContent: 'flex-end' }}>
+                    <Refference /> 
+                </ParallaxLayer> 
+
+                <ParallaxLayer sticky={{ start: 6, end: 7 }} style={{ ...alignCenter, justifyContent: 'flex-end' }}>
                     <PageFoot />
                 </ParallaxLayer> 
             </Parallax>
