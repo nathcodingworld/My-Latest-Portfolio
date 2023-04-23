@@ -10,6 +10,9 @@ import Philosophy from '@templates/pilosophy'
 import Works from '@basepath/templates/homepage/works'
 import Refference from '@templates/refferences'
 import Tests from '../homepage/test'
+import ContactForm from '@templates/contactForm'
+import ContactRow from '../homepage/layout/contactRow'
+import ContactDetail from '../homepage/contactDetail'
 
 export default function PageMain() {
   const alignCenter = { display: 'flex', alignItems: 'center' }
@@ -47,8 +50,11 @@ export default function PageMain() {
                     <Refference /> 
                 </ParallaxLayer> 
 
-                <ParallaxLayer sticky={{ start: 5.2, end: 6 }} style={{ ...alignCenter, justifyContent: 'flex-end' }}>
-                    <Refference /> 
+                <ParallaxLayer sticky={{ start: 5.2, end: 6 }}>
+                    <ContactRow >
+                        <ContactDetail />
+                        <ContactForm /> 
+                    </ContactRow> 
                 </ParallaxLayer> 
 
                 <ParallaxLayer sticky={{ start: 6, end: 7 }} style={{ ...alignCenter, justifyContent: 'flex-end' }}>

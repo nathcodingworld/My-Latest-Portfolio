@@ -85,7 +85,27 @@ export default function Works() {
                 </div>
             </div> 
         </Page>
-        <Page offset={2} gradient="nath" onClick={() => scroll(0)} />
+        <Page offset={2} gradient="nath" onClick={() => scroll(0)} >
+          <div className={style.Works}> 
+            <div className={style.WorksMain}> 
+                <div className={style.WorksDetail}>
+                    <h1>My Latest Works</h1>
+                    <div></div>
+                    <div className={style.WorksContent}>  
+                        <h3>My Portfolio</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ipsum, consectetur iure sint mollitia deserunt est hic velit, officiis aspernatur assumenda consequuntur exercitationem voluptatum perspiciatis deleniti fuga explicabo. Quod, cum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ipsum, consectetur iure sint mollitia deserunt est hic velit, officiis aspernatur assumenda consequuntur exercitationem voluptatum perspiciatis deleniti fuga explicabo. Quod, cum?</p>
+                        <ul>
+                            <li><span>Method: &nbsp; Responsive Website</span></li>
+                            <li><span>Technology: &nbsp; NextJS, React Spring, React Splide, Formik, React Fiber</span></li>
+                            <li><span>Launch Date: &nbsp; June 2023</span></li>
+                            <li><span>Status: &nbsp; Developing</span></li>
+                            <li><span>Design and Develop by: &nbsp; Nathaniel Morales</span></li>  
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </Page>
       </Parallax> 
   )
 }

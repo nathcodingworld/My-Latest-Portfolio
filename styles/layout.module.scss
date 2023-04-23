@@ -49,9 +49,28 @@
     background: black;
 }
 
-.Footer {
-    height: calc(100dvh + 279px);
-    border: 1px solid yellow;
+.Footer {  
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    height: 100%;
+    &Navs {
+        height: 240px;
+        width: 100%;
+        background-color: #101114;
+
+    }
+    &Shoe {
+        width: 100%;
+        background-color: black;
+        height: 40px;
+        @extend .RowCenter;
+        & p {
+            font-size: 16px;
+        }
+    }
 }
  
 
@@ -72,4 +91,13 @@
     & > div:last-child { 
         width: calc(100% - 500px); 
     }
+}
+.ContactRow {
+    @extend .RowCenter;
+    @extend .container;
+    width: 100%;
+    & > div { 
+        margin: 60px auto; 
+        margin-bottom: 0;
+    } 
 }
