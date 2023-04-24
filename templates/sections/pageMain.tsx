@@ -2,7 +2,7 @@
 
 import PageHead from '@templates/pageHead' 
 import PageFoot from '@templates/pageFoot' 
-import { Parallax, ParallaxLayer } from '@react-spring/parallax' 
+import { IParallax, Parallax, ParallaxLayer } from '@react-spring/parallax' 
 import FullBody from '@templates/fullbodyPicture'
 import AboutRow from '@templates/layout/aboutRow'
 import AboutDetail from '@templates/aboutDetail'
@@ -13,15 +13,18 @@ import Tests from '../homepage/test'
 import ContactForm from '@templates/contactForm'
 import ContactRow from '../homepage/layout/contactRow'
 import ContactDetail from '../homepage/contactDetail'
+import { useRef } from 'react'
+ 
 
-export default function PageMain() {
+export default function PageMain({ }  ) {
   const alignCenter = { display: 'flex', alignItems: 'center' }
-
+  const mainParalax = useRef<IParallax>(null)
+   
     return (
         < >
-            <Parallax pages={7}>
+            <Parallax pages={7} ref={mainParalax}>
                 <ParallaxLayer offset={0} speed={0.5} style={{ ...alignCenter, justifyContent: 'center' }}>
-                    <PageHead />
+                    <PageHead paralax={mainParalax} />
                 </ParallaxLayer>
 
                 <ParallaxLayer sticky={{ start: 1, end: 1.4 }} style={{ ...alignCenter, justifyContent: 'flex-start', zIndex: '-10' }}>
