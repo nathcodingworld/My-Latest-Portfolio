@@ -61,7 +61,7 @@ export default function PageMain({ }  ) {
                 </ParallaxLayer> 
 
                 <ParallaxLayer sticky={{ start: 6, end: 7 }} style={{ ...alignCenter, justifyContent: 'flex-end' }}>
-                    <PageFoot />
+                    <PageFoot paralax={mainParalax} />
                 </ParallaxLayer> 
             </Parallax>
         </ >

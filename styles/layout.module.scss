@@ -4,6 +4,12 @@
     margin: auto;
     padding: 0 15px;  
 }
+.RowCenter{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center; 
+}
 
 .Header {
     width: 100% ;
@@ -57,10 +63,35 @@
     justify-content: flex-end; 
     height: 100%;
     &Navs {
-        height: 240px;
+        height: max-content;
         width: 100%;
-        background-color: #101114;
-
+        background-color: #101114; 
+        & > div {
+            @extend .container;
+            padding-top: 30px;
+            @extend .RowCenter;  
+            & > div:last-child {
+                flex-grow: 1;
+                @extend .RowCenter;
+                column-gap: 80px;
+                align-items: flex-start;
+                justify-content: flex-end;
+            } 
+        }
+    }
+    &Social {
+        width: 100%;
+        margin: 12px 0;
+        @extend .RowCenter;
+        justify-content: space-around;
+    }
+    &Links {
+        @extend .RowCenter;
+        flex-direction: column; 
+        row-gap: 20px;
+        align-items: flex-start;  
+        justify-content: flex-start;
+        font-size: 25px;
     }
     &Shoe {
         width: 100%;
@@ -74,12 +105,7 @@
 }
  
 
-.RowCenter{
-    display: flex;
-    flex-direction: row; 
-    justify-content: center;
-    align-items: center; 
-}
+
 
 .AboutRow {
     @extend .RowCenter;

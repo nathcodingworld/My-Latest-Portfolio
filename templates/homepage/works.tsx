@@ -59,8 +59,7 @@ export default function Works() {
                                 <li><span>Technology: &nbsp; Shopify Theme</span></li>
                                 <li><span>Launch Date: &nbsp; March 2023</span></li>
                                 <li><span>Status: &nbsp; Publish</span></li>
-                                <li><span>Design and Develop by: &nbsp; <a href="https://appigators.com/">APPIgators LLC.</a></span></li>  
-                                <li><span>Assigned Developer: &nbsp; Nathaniel Morales</span></li>  
+                                <li><span>Design and Develop by: &nbsp; <a href="https://appigators.com/">APPIgators LLC.</a></span></li>   
                             </ul>
                         </div>
                     </div>
@@ -79,8 +78,7 @@ export default function Works() {
                                 <li><span>Technology: &nbsp; Shopify Theme</span></li>
                                 <li><span>Launch Date: &nbsp; July 2023</span></li>
                                 <li><span>Status: &nbsp; Development</span></li>
-                                <li><span>Designed and Developed by: &nbsp; <a href="https://appigators.com/">APPIgators LLC.</a></span></li> 
-                                <li><span>Assigned Developer: &nbsp; Nathaniel Morales</span></li> 
+                                <li><span>Designed and Developed by: &nbsp; <a href="https://appigators.com/">APPIgators LLC.</a></span></li>  
                             </ul>
                         </div>
                     </div>
