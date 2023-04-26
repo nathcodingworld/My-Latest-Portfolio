@@ -60,7 +60,7 @@ export default function PageMain({ }  ) {
                     </ContactRow> 
                 </ParallaxLayer> 
 
-                <ParallaxLayer sticky={{ start: 6, end: 7 }} style={{ ...alignCenter, justifyContent: 'flex-end' }}>
+                <ParallaxLayer sticky={{ start: 6, end: 7 }} style={{ ...alignCenter, justifyContent: 'flex-end',  pointerEvents: 'none' }}>
                     <PageFoot paralax={mainParalax} />
                 </ParallaxLayer> 
             </Parallax>

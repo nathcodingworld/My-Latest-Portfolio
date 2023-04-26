@@ -1,0 +1,51 @@
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;  
+}
+ 
+.slope {
+    position: absolute;
+    width: 170%;
+    height: 100%;
+    cursor: pointer; 
+} 
+
+.patriot {
+    background: linear-gradient(to right, #183771 0%, #183771 100%);
+  }
+  
+  .primitive {
+    background: linear-gradient(to right, #9B2D24  0%, #9B2D24 100%);
+  }
+  
+  .nath {
+    background: linear-gradient(to right, var(--primary) 0%, var(--primary) 100%);
+  }
+
+  .styleit {
+    background: linear-gradient(to right, #BEAE95 0%, #BEAE95 100%);
+  }
+
+  .estate {
+    background: linear-gradient(to right, #ffac12 0%, #ffac12 100%);
+  }
+  .karen {
+    background: linear-gradient(to right, violet 0%, violet 100%);
+  }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #161822d9;  
+}
+
+.PositionCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

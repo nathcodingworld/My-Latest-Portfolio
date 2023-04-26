@@ -1,0 +1,14 @@
+.PrimaryButton {
+    height: 40px;
+    width: 200px;
+    border-radius: 4px;
+    background-color: var(--primary);
+    border: none;
+    margin: 20px 0; 
+}
+
+.parcon > div > div {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+  }

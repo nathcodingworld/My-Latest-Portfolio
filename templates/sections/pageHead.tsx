@@ -18,7 +18,10 @@ export default function PageHead ( {paralax}: PageHeadType) {
                 <Navigation paralax={paralax}/>
                 <HeadTitle />
             </div>
-            <Image src={photo} alt='nathaniel' className={style.HeaderPhoto} />
+            <div>
+                <Image src={photo} alt='nathaniel' className={style.HeaderPhoto} />
+                <div className={style.overlay}></div>
+            </div>
         </header> 
     )
 }

@@ -62,6 +62,12 @@ export default class Refference extends React.Component<{}> {
                         arrows     : false, 
                         width: 450,
                         height: 400,
+                        breakpoints : {
+                            780: {
+                            width  : '100%', 
+                            height: '90%',
+                            },
+                        },
                         perPage: 1,
                         type: 'fade',
                     }}> 
@@ -70,7 +76,7 @@ export default class Refference extends React.Component<{}> {
                                 <Image src={limuel} alt='robert'/>
                             </div>
                         </SplideSlide> 
-                        <SplideSlide>
+                        <SplideSlide >
                             <div className={style.RefferenceDetail}> 
                                 <Image src={robert} alt='robert'/>
                             </div>

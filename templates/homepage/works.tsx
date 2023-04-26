@@ -53,13 +53,13 @@ export default function Works() {
                          
                         <div className={style.WorksContent}>  
                             <h3><a href="https://patriothitches.com">Patriot Hitches</a></h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ipsum, consectetur iure sint mollitia deserunt est hic velit, officiis aspernatur assumenda consequuntur exercitationem voluptatum perspiciatis deleniti fuga explicabo. Quod, cum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ipsum, consectetur iure sint mollitia deserunt est hic velit, officiis aspernatur assumenda consequuntur exercitationem voluptatum perspiciatis deleniti fuga explicabo. Quod, cum?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ipsum,  ernatur assumenda consequuntur exercitationem voluptatum perspiciatis deleniti fuga explicabo. Quod, cum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ipsum, consectetur iure sint mollitia deserunt est hic velit, officiis aspernatur assumenda consequuntur exercitationem voluptatum perspiciatis deleniti fuga explicabo. Quod, cum?</p>
                             <ul>
-                                <li><span>Method: &nbsp; Responsive Website Rebuild</span></li>
-                                <li><span>Technology: &nbsp; Shopify Theme</span></li>
-                                <li><span>Launch Date: &nbsp; March 2023</span></li>
-                                <li><span>Status: &nbsp; Publish</span></li>
-                                <li><span>Design and Develop by: &nbsp; <a href="https://appigators.com/">APPIgators LLC.</a></span></li>   
+                                <li><span>Method: &nbsp;</span><span> Responsive Website Rebuild</span></li>
+                                <li><span>Design and Develop by: &nbsp;</span><span> <a href="https://appigators.com/">APPIgators LLC.</a></span></li>   
+                                <li><span>Technology: &nbsp;</span><span> Shopify Theme</span></li>
+                                <li><span>Launch Date: &nbsp;</span><span> March 2023</span></li>
+                                <li><span>Status: &nbsp;</span><span> Publish</span></li>
                             </ul>
                         </div>
                     </div>
@@ -72,13 +72,13 @@ export default function Works() {
                     <div className={style.WorksDetail}> 
                         <div className={style.WorksContent}>  
                             <h3><a href="https://primitivelife.com">Primitive Life</a></h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ipsum, consectetur iure sint mollitia deserunt est hic velit, officiis aspernatur assumenda consequuntur exercitationem voluptatum perspiciatis deleniti fuga explicabo. Quod, cum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ipsum, consectetur iure sint mollitia deserunt est hic velit, officiis aspernatur assumenda consequuntur exercitationem voluptatum perspiciatis deleniti fuga explicabo. Quod, cum?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisic llitia deseru  exercitationem voluptatum perspiciatis deleniti fuga explicabo. Quod, cum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ipsum, consectetur iure sint mollitia deserunt est hic velit, officiis aspernatur assumenda consequuntur exercitationem voluptatum perspiciatis deleniti fuga explicabo. Quod, cum?</p>
                             <ul>
-                                <li><span>Method: &nbsp; Responsive Website</span></li>
-                                <li><span>Technology: &nbsp; Shopify Theme</span></li>
-                                <li><span>Launch Date: &nbsp; July 2023</span></li>
-                                <li><span>Status: &nbsp; Development</span></li>
-                                <li><span>Designed and Developed by: &nbsp; <a href="https://appigators.com/">APPIgators LLC.</a></span></li>  
+                                <li><span>Method: &nbsp;</span><span> Responsive Website</span></li>
+                                <li><span>Designed and Developed by: &nbsp;</span><span> <a href="https://appigators.com/">APPIgators LLC.</a></span></li>  
+                                <li><span>Technology: &nbsp;</span><span> Shopify Theme</span></li>
+                                <li><span>Launch Date: &nbsp;</span><span> July 2023</span></li>
+                                <li><span>Status: &nbsp;</span><span> Development</span></li>
                             </ul>
                         </div>
                     </div>
@@ -91,13 +91,13 @@ export default function Works() {
                 <div className={style.WorksDetail}> 
                     <div className={style.WorksContent}>  
                         <h3>My Portfolio</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ipsum, consectetur iure sint mollitia deserunt est hic velit, officiis aspernatur assumenda consequuntur exercitationem voluptatum perspiciatis deleniti fuga explicabo. Quod, cum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ipsum, consectetur iure sint mollitia deserunt est hic velit, officiis aspernatur assumenda consequuntur exercitationem voluptatum perspiciatis deleniti fuga explicabo. Quod, cum?</p>
+                        <p>Lorem ipsum dolor sit amet c  hic velit, officiis aspernatur assumenda conseq is deleniti fuga explicabo. Quod, cum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ipsum, consectetur iure sint mollitia deserunt est hic velit, officiis aspernatur assumenda consequuntur exercitationem voluptatum perspiciatis deleniti fuga explicabo. Quod, cum?</p>
                         <ul>
-                            <li><span>Method: &nbsp; Responsive Website</span></li>
-                            <li><span>Technology: &nbsp; NextJS, React Spring, React Splide, Formik, React Fiber</span></li>
-                            <li><span>Launch Date: &nbsp; June 2023</span></li>
-                            <li><span>Status: &nbsp; Developing</span></li>
-                            <li><span>Design and Develop by: &nbsp; Nathaniel Morales</span></li>  
+                            <li><span>Method: &nbsp;</span><span> Responsive Website</span></li>
+                            <li><span>Design and Develop by: &nbsp;</span><span> Nathaniel Morales</span></li>  
+                            <li><span>Technology: &nbsp;</span><span> NextJS, React Spring, React Splide, Formik, React Fiber</span></li>
+                            <li><span>Launch Date: &nbsp;</span><span> June 2023</span></li>
+                            <li><span>Status: &nbsp;</span><span> Developing</span></li>
                         </ul>
                     </div>
                 </div>
@@ -110,13 +110,13 @@ export default function Works() {
                 <div className={style.WorksDetail}> 
                     <div className={style.WorksContent}>  
                         <h3><a href='https://styleitdaily.vercel.app'>StyleItDaily</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ipsum, consectetur iure sint mollitia deserunt est hic velit, officiis aspernatur assumenda consequuntur exercitationem voluptatum perspiciatis deleniti fuga explicabo. Quod, cum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ipsum, consectetur iure sint mollitia deserunt est hic velit, officiis aspernatur assumenda consequuntur exercitationem voluptatum perspiciatis deleniti fuga explicabo. Quod, cum?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur  quuntur exercitationem voluptatum perspiciatis deleniti fuga explicabo. Quod, cum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ipsum, consectetur iure sint mollitia deserunt est hic velit, officiis aspernatur assumenda consequuntur exercitationem voluptatum perspiciatis deleniti fuga explicabo. Quod, cum?</p>
                         <ul>
-                            <li><span>Method: &nbsp; Responsive Website</span></li>
-                            <li><span>Technology: &nbsp; NextJS, Material UI, Framer Motion </span></li>
-                            <li><span>Launch Date: &nbsp; June 2023</span></li>
-                            <li><span>Status: &nbsp; Developing</span></li>
-                            <li><span>Design and Develop by: &nbsp; Nathaniel Morales</span></li>  
+                            <li><span>Method: &nbsp;</span><span> Responsive Website</span></li>
+                            <li><span>Design and Develop by: &nbsp;</span><span> Nathaniel Morales</span></li>  
+                            <li><span>Technology: &nbsp;</span><span> NextJS, Material UI, Framer Motion </span></li>
+                            <li><span>Launch Date: &nbsp;</span><span> June 2023</span></li>
+                            <li><span>Status: &nbsp;</span><span> Developing</span></li>
                         </ul>
                     </div>
                 </div>

@@ -1,92 +1,37 @@
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 15px;  
-}
-.PrimaryButton {
-    height: 40px;
-    width: 200px;
-    border-radius: 4px;
-    background-color: var(--primary);
-    border: none;
-    margin: 20px 0; 
-}
-
-.parcon > div > div {
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-  }
-    
-  .slope {
-    position: absolute;
-    width: 170%;
-    height: 100%;
-    cursor: pointer; 
-  } 
-   
+@import '../_utilities/extends'; 
+@import '../_utilities/components';
+@import '../_utilities/mixins';
+@import '../_utilities/breakpoints';
   
-  .patriot {
-    background: linear-gradient(to right, #183771 0%, #183771 100%);
-  }
-  
-  .primitive {
-    background: linear-gradient(to right, #9B2D24  0%, #9B2D24 100%);
-  }
-  
-  .nath {
-    background: linear-gradient(to right, var(--primary) 0%, var(--primary) 100%);
-  }
-
-  .styleit {
-    background: linear-gradient(to right, #BEAE95 0%, #BEAE95 100%);
-  }
-
-  .estate {
-    background: linear-gradient(to right, #ffac12 0%, #ffac12 100%);
-  }
-  .karen {
-    background: linear-gradient(to right, violet 0%, violet 100%);
-  }
-
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #161822d9;  
-}
-.PositionCenter {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.RowCenter{
-    display: flex;
-    flex-direction: row; 
-    justify-content: center;
-    align-items: center; 
-}
-.ColCenter{
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center; 
-}
 
 .picture{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 0 15px;
+    align-items: center; 
     &Background {
         height: 600px;
         width: 400px;
         border-radius: 25px;
+        position: relative;
         background-color: var(--backgoundsecondary);
+        @include portrait(400px) {
+            width: 100%; 
+        }
+        & img {
+            height: 100%;
+            width: 100%;
+        }
+        & > div { 
+            @include portrait(1133px) {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #161822d9;  
+            }
+        }
     }
 }
 
@@ -103,8 +48,10 @@
             border: none;
             &:disabled img{
                 opacity: .1;
-            }
-            
+            } 
+        }
+        @include portrait(744px) {
+            bottom: 0;
         }
     }
 }
@@ -197,6 +144,9 @@
             width: 100%; 
             height: 100%;
             object-fit: 100%;
+            @include portrait(1133px) {
+                object-fit: cover; 
+            }
         }
     }
     &Next { 
@@ -235,10 +185,9 @@
         height: 100%;
         opacity: .9;  
         @extend .container;
-        @extend .ColCenter;
-        align-items: flex-start;
+        @include Col(center, flex-start); 
         & p {
-            max-width: 70%;
+            max-width: 70%; 
         }
         & h3 {
             padding-bottom: 20px;
@@ -248,10 +197,25 @@
             font-size: large;
             font-weight: bold;
             padding: 10px 0; 
+            @include portrait(705px) {
+                padding: 7px 0;
+                display: flex; 
+                flex-direction: column;
+                row-gap: 4px;
+            }
+            & span:first-child {
+                color: var(--primary);
+            } 
         }
         & ul {
             padding: 10px;
             list-style: none;
+            max-width: 70%;
+            @include portrait(705px) {
+                padding: 0; 
+                padding-top: 10px;
+            }
+            
         } 
     }
     &Container {
@@ -263,16 +227,31 @@
 
 .Refference {
     @extend .container;
-    @extend .ColCenter;
+    @include Col;  
+    & h1 {
+        padding: 0;
+        margin: 0;
+    }
     & > div {
         padding: 40px 0;
-        @extend .RowCenter;
+        @include Row;
+        @include portrait(780px) {
+            flex-direction: column;
+            padding: 15px 0; 
+        } 
     }
     &Msg {
         padding: 40px; 
         text-align: center; 
         height: 100%;
-        @extend .ColCenter;
+        @include Col; 
+        @include portrait(780px) { 
+            padding: 40px 15px; 
+        }
+        @include portrait(480px) { 
+            font-size: 14px;
+            line-height: 18px;
+        }
         & img {
             position: absolute;
             &:first-child {
@@ -291,6 +270,12 @@
         -webkit-clip-path: polygon(0% 0%, 65% 0%, 100% 100%, 35% 100%);
         clip-path: polygon(0% 0%, 65% 0%, 100% 100%, 35% 100%);
         background: #A0AEC0 ; 
+        @include portrait(780px) {
+            width: 100%; 
+        }
+        @include portrait(640px) {
+            display: none;
+        }
         & img { 
             object-fit: contain;
             width: 100%;
@@ -300,6 +285,7 @@
 }
 
 .Contact {
+    z-index: 30;
     &Detail {
         & p {
             max-width: 70%;
@@ -308,24 +294,34 @@
         & ul {
             margin: 20px 0;
             list-style: none;
+            @include portrait(744px) {
+                margin: 10px 0; 
+            }
             & li {
                 margin: 12px 0;
+                @include portrait(744px) {
+                    margin: 8px 0; 
+                }
             }
         }
         & button {
             @extend .PrimaryButton; 
+            @include portrait(744px) {
+                margin-top: 0;
+                height: 35px;
+                width: 180px;
+            }
         }
         
     }
     &Form { 
-        z-index: 10;
+        z-index: 40;
         margin-top: 60px;
         & div {
             color: var(--error); 
         }
         & form {
-            @extend .ColCenter; 
-            align-items: flex-start;
+            @include Col(center, flex-start); 
         }
         & input {
             height: 43px;
@@ -335,6 +331,12 @@
             border: none;
             padding: 5px 12px;
             margin: 12px 0;
+            @include portrait(744px) {
+                width: 100%;
+                margin: 5px 0;
+                height: 35px;
+                padding: 4px 12px; 
+            }
         }
         & textarea {
             height: 220px;
@@ -344,10 +346,22 @@
             border: none;
             padding: 12px;
             margin: 12px 0;
+            @include portrait(744px) {
+                width: 100%;
+                margin: 5px 0;
+                height: 120px; 
+                padding: 4px 12px;
+            }
         }
         & button { 
             @extend .PrimaryButton;
             margin-left: 300px; 
+            @include portrait(744px) {
+                margin-left: 0;  
+                margin-top: 8px;
+                height: 35px;
+                width: 180px;
+            }
         }
     }
 }
