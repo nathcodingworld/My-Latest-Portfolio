@@ -4,6 +4,7 @@ import mainpatriot from '@assets/mainpatriot.png'
 import styleit from '@assets/styleit.png'  
 import neaxtimg from '@assets/neaxtimg.png' 
 import mainprimitive from '@assets/mainprimitive.png' 
+import nathport from '@assets/nathport.png' 
 import Image from "next/image";
 import style from '@styles/Body.module.scss' 
 
@@ -85,7 +86,7 @@ export default function Works() {
                 </div>
             </div> 
         </Page>
-        <Page offset={2} gradient="nath" onClick={() => scroll(3)} image=''>
+        <Page offset={2} gradient="nath" onClick={() => scroll(3)} image={nathport}>
           <div className={style.Works}> 
             <div className={style.WorksMain}> 
                 <div className={style.WorksDetail}> 

@@ -31,7 +31,7 @@ export default function AboutDetail() {
             <div className={style.AboutDetail} >
                 <h2 className={font.className}>About Me</h2>
                 <p className={font.className}>
-                    Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. 
+                    I am a full-stack developer and I am passionate about programming. I've always wanted to create high-quality projects, and I am capable of creating e-commerce websites and social media platforms. 
                 </p>
             </div>
             <div className={style.AboutBtns}>

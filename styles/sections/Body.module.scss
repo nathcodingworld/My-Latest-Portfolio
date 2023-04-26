@@ -155,7 +155,8 @@
         margin-bottom: 12px;
     }
     &Htitle { 
-        margin-bottom: 12px;
+        margin-bottom: 12px; 
+        margin-top: 30px; 
         & h4 {
             @include landscape(850px) { 
                 font-size: 25px;
@@ -166,6 +167,7 @@
     &Hcontent {
         opacity: .7;
         padding-left: 20px; 
+        padding-bottom: 30px;
     }
 } 
  
