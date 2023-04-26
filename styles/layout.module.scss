@@ -74,7 +74,7 @@
             & > div:last-child {
                 flex-grow: 1;
                 @include Row(flex-end, flex-start); 
-                @include portrait(744px) {
+                @include breakpoint(850px) {
                     display: none;
                 }
                 column-gap: 80px; 
@@ -91,6 +91,9 @@
         @include Col(flex-start, flex-start); 
         row-gap: 20px; 
         font-size: 25px;
+        & a {
+            pointer-events: auto;
+        }
     }
     &Shoe {
         width: 100%;
@@ -148,6 +151,10 @@
             &:first-child {
                 margin-bottom: 0;
             }
+        }
+        @include landscape(850px) {
+            margin: 25px auto;  
+
         }
     } 
 }

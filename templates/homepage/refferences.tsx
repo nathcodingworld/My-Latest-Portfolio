@@ -40,7 +40,7 @@ export default class Refference extends React.Component<{}> {
                                 <SplideSlide>
                                     <div className={style.RefferenceMsg}>
                                         <Image src={ql} alt="quote"/>
-                                        <p>I have had the pleasure of working with Nathaniel on several projects and I have been continually impressed by his talent, dedication, and ability to learn new technologies quickly. Nathaniel's technical expertise is exceptional. He possesses a deep understanding of web development and has a keen eye for detail. He is able to deliver high-quality work under tight deadlines and is always willing to go the extra mile to ensure client satisfaction. One of Nathaniel's greatest strengths is his ability to learn new technologies quickly. He is always eager to expand his knowledge and skills, and he has a natural aptitude for picking up new concepts and tools. This makes him a valuable asset to any team and ensures that he is always up-to-date with the latest industry trends and best practices. Overall, I can confidently say that Nathaniel is an excellent web developer and a pleasure to work with. I highly recommend him for any web development projects or roles that require a talented, dedicated, and fast-learning individual.</p>
+                                        <p>I have been continually impressed by his talent, dedication, and ability to learn new technologies quickly. Nathaniel is able to deliver high-quality work under tight deadlines and is always willing to go the extra mile to ensure client satisfaction. One of Nathaniel's greatest strengths is his ability to learn new technologies quickly. He is always eager to expand his knowledge and skills, and he has a natural aptitude for picking up new concepts and tools. This makes him a valuable asset to any team and ensures that he is always up-to-date with the latest industry trends and best practices. Overall, I can confidently say that Nathaniel is an excellent web developer and a pleasure to work with. I highly recommend him for any web development projects or roles that require a talented, dedicated, and fast-learning individual.</p>
                                         <Image src={qr} alt="quote"/>
                                     </div> 
                                 </SplideSlide>
@@ -63,7 +63,7 @@ export default class Refference extends React.Component<{}> {
                         width: 450,
                         height: 400,
                         breakpoints : {
-                            780: {
+                            850: {
                             width  : '100%', 
                             height: '90%',
                             },

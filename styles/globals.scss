@@ -70,3 +70,10 @@ a {
     line-height: 30px;
   }
 }
+
+@media (max-width: 850px) and (orientation: landscape) {
+  p { 
+      font-size: 15px;
+      line-height: 25px; 
+  }
+}

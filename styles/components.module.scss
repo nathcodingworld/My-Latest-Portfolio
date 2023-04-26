@@ -23,7 +23,7 @@
         display: flex;
         @include Row(center);  
         column-gap: 40px; 
-        @include portrait(705px) {
+        @include breakpoint(850px) {
             display: none;
         } 
     }

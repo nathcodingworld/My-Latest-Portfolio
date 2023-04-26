@@ -35,7 +35,7 @@ export default function AboutDetail() {
                 </p>
             </div>
             <div className={style.AboutBtns}>
-                <button  onClick={clickHandler('skill')}>Skills<span ref={skill}></span></button>
+                <button  onClick={clickHandler('skill')}>Skills<span ref={skill} style={{width: '35px'}}></span></button>
                 <button  onClick={clickHandler('exp')}>Experience<span ref={experience}></span></button>
                 <button  onClick={clickHandler('edu')}>Education<span ref={education}></span></button>
             </div>
@@ -50,42 +50,50 @@ export default function AboutDetail() {
             }}>
                 <SplideSlide>
                     <div className={style.detul}>
-                        <div className={style.detli}>
-                            <p>Front End</p>
-                            <p>HTML,  CSS, JavaScript, Next js, React Js, Remix</p>
+                        <div>
+                            <div className={style.detli}>
+                                <p>Front End</p>
+                                <p>HTML,  CSS, JavaScript, Next js, React Js, Remix</p>
+                            </div>
+                            <div className={style.detli}>
+                                <p>Back End</p>
+                                <p>Node js, GraphQL, Express js, Liquid</p>
+                            </div>
                         </div>
-                        <div className={style.detli}>
-                            <p>Back End</p>
-                            <p>Node js, GraphQL, Express js, Liquid</p>
-                        </div>
-                        <div className={style.detli}>
-                            <p>Databases</p>
-                            <p>MongoDB, FireStore, </p>
-                        </div>
-                        <div className={style.detli}>
-                            <p>CMS, E-Commerse</p>
-                            <p>Shopify Theme, Shopify App, Custom Store front</p>
+                        <div>
+                            <div className={style.detli}>
+                                <p>Databases</p>
+                                <p>MongoDB, FireStore, </p>
+                            </div>
+                            <div className={style.detli}>
+                                <p>CMS, E-Commerse</p>
+                                <p>Shopify Theme, Shopify App, Custom Store front</p>
+                            </div> 
                         </div>
                     </div>
                 </SplideSlide>
                 <SplideSlide>
                 <div className={style.detul}>
-                    <div className={style.detli}>
-                        <p>June 2022  to  December 2022</p>
-                        <p>Web Developer  @  SearchWorks.Ph</p>
+                    <div>
+                        <div className={style.detli}>
+                            <p>June 2022  to  December 2022</p>
+                            <p>Web Developer  @  SearchWorks.Ph</p>
+                        </div>
+                        <div className={style.detli}>
+                            <p>November 2022  to  Pressent</p>
+                            <p>Shopify Theme Developer  @  APPIgators LLC</p>
+                        </div> 
                     </div>
-                    <div className={style.detli}>
-                        <p>November 2022  to  Pressent</p>
-                        <p>Shopify Theme Developer  @  APPIgators LLC</p>
-                    </div> 
                 </div>
                 </SplideSlide>
                 <SplideSlide>
                 <div className={style.detul}>
-                    <div className={style.detli}>
-                        <p>June 2013  to  April 2018</p>
-                        <p>BSCE @ Our Lady of Fatima University Pampanga</p>
-                    </div> 
+                    <div>
+                        <div className={style.detli}>
+                            <p>June 2013  to  April 2018</p>
+                            <p>BSCE @ Our Lady of Fatima University Pampanga</p>
+                        </div> 
+                    </div>
                 </div>
                 </SplideSlide>
             </Splide>

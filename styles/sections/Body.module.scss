@@ -53,6 +53,15 @@
         @include portrait(744px) {
             bottom: 0;
         }
+        @include landscape(850px) {
+            bottom: 0; 
+            left: 100%;
+            & button { 
+                &:disabled img{
+                    display: none;
+                } 
+            }
+        }
     }
 }
 
@@ -68,9 +77,22 @@
         flex-direction: column;
         padding: 0 12px; 
         row-gap: 20px;
+        @include landscape(850px) {
+            row-gap: 8px; 
+        }
         & h2 {
             font-size: 58px;
             line-height: 68px;
+            @include landscape(850px) {
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+        & p {
+            @include landscape(850px) {
+                font-size: 15px;
+                line-height: 24px;
+            }
         }
     }
     &Btns {
@@ -103,10 +125,16 @@
     &Aditional {
         width: 100%;
         padding: 0 12px;
-        & .detul {
+        & .detul, & .detul > div {
             display: flex;
             flex-direction: column;
             row-gap: 10px; 
+        }
+        & .detul {
+            @include landscape(850px) {
+                flex-direction: row;
+                column-gap: 20px;
+            }
         }
         & .detli p:first-child {
             color: var(--primary);
@@ -120,18 +148,27 @@
 
 .Philosophy {
     padding: 0 12px;
+    @include landscape(850px) { 
+        transform: translateY(20%);
+    }
     & .accitem {
         margin-bottom: 12px;
     }
     &Htitle { 
         margin-bottom: 12px;
+        & h4 {
+            @include landscape(850px) { 
+                font-size: 25px;
+                line-height: 35px;
+            }
+        }
     }
     &Hcontent {
         opacity: .7;
-        padding-left: 20px;
+        padding-left: 20px; 
     }
-}
-
+} 
+ 
 .Works {  
     width: 100%; 
     height: 100%;
@@ -158,6 +195,10 @@
             right: 20%;
             object-fit: contain;
             width: 20%;
+            @include landscape(850px) { 
+                bottom: unset;
+                top: 0; 
+            }
         }
     }
     & h1 {
@@ -189,9 +230,21 @@
         & p {
             max-width: 70%; 
         }
+        @include portrait-md {
+            p  {
+                font-size: 25px;
+                line-height: 35px; 
+            }  
+
+        }
         & h3 {
             padding-bottom: 20px;
             z-index: 10px;
+            @include landscape(850px) { 
+                font-size: 25px;
+                line-height: 35px;
+                padding-bottom: 5px; 
+            }
         }
         & li { 
             font-size: large;
@@ -203,6 +256,11 @@
                 flex-direction: column;
                 row-gap: 4px;
             }
+            @include landscape(850px) { 
+                font-size: 15px;
+                line-height: 24px;
+                padding: 0;  
+            } 
             & span:first-child {
                 color: var(--primary);
             } 
@@ -231,22 +289,31 @@
     & h1 {
         padding: 0;
         margin: 0;
+        @include landscape(850px) { 
+            font-size: 28px;
+        }
     }
     & > div {
         padding: 40px 0;
         @include Row;
-        @include portrait(780px) {
+        @include portrait(850px) {
             flex-direction: column;
             padding: 15px 0; 
         } 
+        @include landscape(850px) { 
+            padding: 0;  
+        }
     }
     &Msg {
         padding: 40px; 
         text-align: center; 
         height: 100%;
         @include Col; 
-        @include portrait(780px) { 
+        @include portrait(850px) { 
             padding: 40px 15px; 
+        }
+        @include landscape(850px) {
+            padding: 20px 15px;  
         }
         @include portrait(480px) { 
             font-size: 14px;
@@ -257,10 +324,16 @@
             &:first-child {
                 top: 0;
                 left: 0;
+                @include landscape(850px) { 
+                    transform: scale(.5);  
+                }
             }
             &:last-child {
                 bottom: 0;
                 right: 0;
+                @include landscape(850px) { 
+                    transform: scale(.5);  
+                }
             }
         }
     }
@@ -270,7 +343,11 @@
         -webkit-clip-path: polygon(0% 0%, 65% 0%, 100% 100%, 35% 100%);
         clip-path: polygon(0% 0%, 65% 0%, 100% 100%, 35% 100%);
         background: #A0AEC0 ; 
-        @include portrait(780px) {
+        @include landscape(850px) {
+            width: 100%; 
+            height: 100%;
+        }
+        @include portrait(850px) {
             width: 100%; 
         }
         @include portrait(640px) {
@@ -280,6 +357,11 @@
             object-fit: contain;
             width: 100%;
             height: 100%; 
+            @include landscape(850px) {
+                width: 200%; 
+                object-fit: cover; 
+                object-position: -35px;
+            }
         }
     }
 }
@@ -287,9 +369,17 @@
 .Contact {
     z-index: 30;
     &Detail {
+        & h1 {
+            @include landscape(850px) {
+                font-size: 30px; 
+            }
+        }
         & p {
             max-width: 70%;
             margin: 12px 0;
+            @include landscape(850px) {
+                margin: 0; 
+            }
         }
         & ul {
             margin: 20px 0;
@@ -305,8 +395,8 @@
             }
         }
         & button {
-            @extend .PrimaryButton; 
-            @include portrait(744px) {
+            @extend .PrimaryButton;  
+            @include breakpoint(850px) {
                 margin-top: 0;
                 height: 35px;
                 width: 180px;
@@ -337,6 +427,12 @@
                 height: 35px;
                 padding: 4px 12px; 
             }
+            @include landscape(850px) {
+                width: 250px; 
+                height: 30px; 
+                padding: 4px 12px; 
+                margin: 8px 0; 
+            }
         }
         & textarea {
             height: 220px;
@@ -352,11 +448,16 @@
                 height: 120px; 
                 padding: 4px 12px;
             }
+            @include landscape(850px) {
+                width: 250px; 
+                height: 110px; 
+                margin: 8px 0;
+            }
         }
         & button { 
             @extend .PrimaryButton;
-            margin-left: 300px; 
-            @include portrait(744px) {
+            margin-left: 300px;  
+            @include breakpoint(850px) {
                 margin-left: 0;  
                 margin-top: 8px;
                 height: 35px;
