@@ -4,7 +4,7 @@ export default function ContactDetail() {
     return (
         <div className={style.ContactDetail}>
             <h1>Contact Me</h1>
-            <p>Norem ipsum dolor sit amet, consectetur adipis cing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. </p>
+            <p>Thank you for taking the time to visit my website. If you have any questions or would like to discuss a project, please feel free to contact me.</p>
             <ul>
                 <li>Email:  Nathaniel.1stacc@gmail.com</li>
                 <li>Phone:  09770291126</li>

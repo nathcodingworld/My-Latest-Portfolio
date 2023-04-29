@@ -46,7 +46,7 @@ export default function Works() {
     }
   }
   return ( 
-      <Parallax className={style.parcon} ref={parallax} pages={6} horizontal>
+      <Parallax className={style.parcon} ref={parallax} pages={4} horizontal>
         <Page offset={0} gradient="patriot" onClick={() => scroll(1)} image={mainpatriot} >
             <div className={style.Works}> 
                 <div className={style.WorksMain}> 
@@ -54,7 +54,7 @@ export default function Works() {
                          
                         <div className={style.WorksContent}>  
                             <h3><a href="https://patriothitches.com">Patriot Hitches</a></h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ipsum,  ernatur assumenda consequuntur exercitationem voluptatum perspiciatis deleniti fuga explicabo. Quod, cum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ipsum, consectetur iure sint mollitia deserunt est hic velit, officiis aspernatur assumenda consequuntur exercitationem voluptatum perspiciatis deleniti fuga explicabo. Quod, cum?</p>
+                            <p>The rebuild of the Patriot Hitches website was a challenging project that I undertook without any prior experience using the Shopify technology. However, by reading and following the Shopify documentation and with the help of my coworker developer, I was able to complete the project correctly within two months.</p>
                             <ul>
                                 <li><span>Method: &nbsp;</span><span> Responsive Website Rebuild</span></li>
                                 <li><span>Design and Develop by: &nbsp;</span><span> <a href="https://appigators.com/">APPIgators LLC.</a></span></li>   
@@ -73,7 +73,7 @@ export default function Works() {
                     <div className={style.WorksDetail}> 
                         <div className={style.WorksContent}>  
                             <h3><a href="https://primitivelife.com">Primitive Life</a></h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisic llitia deseru  exercitationem voluptatum perspiciatis deleniti fuga explicabo. Quod, cum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ipsum, consectetur iure sint mollitia deserunt est hic velit, officiis aspernatur assumenda consequuntur exercitationem voluptatum perspiciatis deleniti fuga explicabo. Quod, cum?</p>
+                            <p>The Primitive Life website is also being built using Shopify technology. I am creating this website from start to finish simultaneously with PatriotHitch.</p>
                             <ul>
                                 <li><span>Method: &nbsp;</span><span> Responsive Website</span></li>
                                 <li><span>Designed and Developed by: &nbsp;</span><span> <a href="https://appigators.com/">APPIgators LLC.</a></span></li>  
@@ -92,11 +92,11 @@ export default function Works() {
                 <div className={style.WorksDetail}> 
                     <div className={style.WorksContent}>  
                         <h3>My Portfolio</h3>
-                        <p>Lorem ipsum dolor sit amet c  hic velit, officiis aspernatur assumenda conseq is deleniti fuga explicabo. Quod, cum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ipsum, consectetur iure sint mollitia deserunt est hic velit, officiis aspernatur assumenda consequuntur exercitationem voluptatum perspiciatis deleniti fuga explicabo. Quod, cum?</p>
+                        <p>This will be my personal website. I am planning to have blogs and a gallery, and if possible, in the future, I will add a lessons page to share my knowledge in technical skills with other developers. Currently, it is in the designing stage, and my goal for this website is to showcase all of my skills by using them in this website.</p>
                         <ul>
                             <li><span>Method: &nbsp;</span><span> Responsive Website</span></li>
                             <li><span>Design and Develop by: &nbsp;</span><span> Nathaniel Morales</span></li>  
-                            <li><span>Technology: &nbsp;</span><span> NextJS, React Spring, React Splide, Formik, React Fiber</span></li>
+                            <li><span>Technology: &nbsp;</span><span> NextJS, React Spring, React Splide, Formik</span></li>
                             <li><span>Launch Date: &nbsp;</span><span> June 2023</span></li>
                             <li><span>Status: &nbsp;</span><span> Developing</span></li>
                         </ul>
@@ -105,13 +105,13 @@ export default function Works() {
             </div>
           </div>
         </Page>
-        <Page offset={3} gradient="styleit" onClick={() => scroll(4)} image={styleit} >
+        <Page offset={3} gradient="styleit" onClick={() => scroll(0)} image={styleit} >
           <div className={style.Works}> 
             <div className={style.WorksMain}>  
                 <div className={style.WorksDetail}> 
                     <div className={style.WorksContent}>  
                         <h3><a href='https://styleitdaily.vercel.app'>StyleItDaily</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur  quuntur exercitationem voluptatum perspiciatis deleniti fuga explicabo. Quod, cum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ipsum, consectetur iure sint mollitia deserunt est hic velit, officiis aspernatur assumenda consequuntur exercitationem voluptatum perspiciatis deleniti fuga explicabo. Quod, cum?</p>
+                        <p>This is my first e-commerce project using Next.js. It's meant for my friend's dog clothing online store, but she has been too busy to check it out. Nevertheless, I still want to finish this website just to showcase that I can create an e-commerce website using Next.js.</p>
                         <ul>
                             <li><span>Method: &nbsp;</span><span> Responsive Website</span></li>
                             <li><span>Design and Develop by: &nbsp;</span><span> Nathaniel Morales</span></li>  
@@ -123,9 +123,7 @@ export default function Works() {
                 </div>
             </div>
           </div>
-        </Page>
-        <Page offset={4} gradient="estate" onClick={() => scroll(5)} image='' />
-        <Page offset={5} gradient="karen" onClick={() => scroll(0)} image=''  />
+        </Page> 
       </Parallax> 
   )
 }
