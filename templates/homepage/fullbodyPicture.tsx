@@ -6,8 +6,7 @@ import Image from 'next/image'
 export default function FullBody() {
     return (
         <div className={style.picture}>
-            <div className={style.pictureBackground}>
-                <Image src={photo} alt='' />
+            <div className={style.pictureBackground}> 
                 <div></div>
             </div>
         </div>
