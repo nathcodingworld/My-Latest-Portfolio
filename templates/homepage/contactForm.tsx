@@ -1,7 +1,10 @@
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import style from '@styles/Body.module.scss'
+import { useSnackbar } from 'notistack';
+
 export default function ContactForm () {
+  const { enqueueSnackbar } = useSnackbar() 
     return (
         <div className={style.ContactForm}> 
           <Formik
@@ -23,11 +26,29 @@ export default function ContactForm () {
               } 
               return errors;
             }}
-            onSubmit={(values, { setSubmitting }) => {
-              setTimeout(() => {
-                alert(JSON.stringify(values, null, 2));
-                setSubmitting(false);
-              }, 400);
+            onSubmit={ async (values, { setSubmitting, resetForm }) => { 
+              const res = await fetch('/api/contact', {
+                method: 'POST',
+                body: JSON.stringify(values, null, 2),
+                headers: {
+                    'content-Type' : 'application/json'
+                } 
+              })
+              if(!res?.ok) throw Error('oops something went wrong')
+              const result = await res.json()
+              if(result.success) {
+                enqueueSnackbar(result.message, {variant: 'info'}) 
+                resetForm({
+                  values: { 
+                    email: '',
+                    fullName: '',
+                    message: '',
+                    phone: ''
+                  },
+                })
+              } 
+              else enqueueSnackbar(result.message, {variant: 'error'}) 
+              setSubmitting(false); 
             }}
           >
             {({ isSubmitting }) => (
