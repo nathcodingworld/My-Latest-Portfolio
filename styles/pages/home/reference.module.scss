@@ -1,0 +1,116 @@
+@use  '../../abstract/breakpoints' as bp;
+@use '../../utilities/mixins' as mixn; 
+
+@import '../../utilities/extends';
+
+.Refference {
+    @extend .container;
+    @include mixn.Col;  
+    & h1 {
+        padding: 0;
+        margin: 0;
+        @include bp.landscape(850px) { 
+            font-size: 28px;
+        }
+    }
+    & > div {
+        padding: 40px 0;
+        @include mixn.Row;
+        @include bp.portrait(850px) {
+            flex-direction: column;
+            padding: 15px 0; 
+        } 
+        @include bp.landscape(850px) { 
+            padding: 0;  
+        }
+    }
+    &Msg {
+        padding: 40px; 
+        text-align: center; 
+        height: 100%;
+        @include mixn.Col; 
+        @include bp.portrait(850px) { 
+            padding: 40px 15px; 
+        }
+        @include bp.landscape(850px) {
+            padding: 20px 15px;  
+        }
+        @include bp.portrait(480px) { 
+            font-size: 14px;
+            line-height: 18px;
+        }
+        & img {
+            position: absolute;
+            &:first-child {
+                top: 0;
+                left: 0;
+                @include bp.landscape(850px) { 
+                    transform: scale(.5);  
+                }
+            }
+            &:last-child {
+                bottom: 0;
+                right: 0;
+                @include bp.landscape(850px) { 
+                    transform: scale(.5);  
+                }
+            }
+        }
+    }
+    &Detail {
+        width: 450px;
+        height: 400px;
+        -webkit-clip-path: polygon(0% 0%, 65% 0%, 100% 100%, 35% 100%);
+        clip-path: polygon(0% 0%, 65% 0%, 100% 100%, 35% 100%);
+        background: #A0AEC0 ; 
+        @include bp.landscape(850px) {
+            width: 100%; 
+            height: 100%;
+        }
+        @include bp.portrait(850px) {
+            width: 100%; 
+        }
+        @include bp.portrait(640px) {
+            display: none;
+        }
+        & img { 
+            object-fit: contain;
+            width: 100%;
+            height: 100%; 
+            @include bp.landscape(850px) {
+                width: 200%; 
+                object-fit: cover; 
+                object-position: -35px;
+            }
+        }
+    }
+}
+
+.Splide {
+    &Arrows { 
+        position: absolute;
+        left: 50%;  
+        display: flex;
+        column-gap: 20px;
+        transform: translateX(-50%);
+        & button {
+            background-color: transparent;
+            border: none;
+            &:disabled img{
+                opacity: .1;
+            } 
+        }
+        @include bp.portrait(744px) {
+            bottom: 0;
+        }
+        @include bp.landscape(850px) {
+            bottom: 0; 
+            left: 100%;
+            & button { 
+                &:disabled img{
+                    display: none;
+                } 
+            }
+        }
+    }
+}

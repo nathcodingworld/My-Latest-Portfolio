@@ -1,5 +1,5 @@
 import { Splide, SplideSlide } from '@splidejs/react-splide'
-import style from '@styles/Body.module.scss'
+import style from '@styles/about.module.scss'
 import { Noto_Serif_Hebrew } from 'next/font/google'
 import { useRef } from 'react'
 import '@splidejs/react-splide/css';

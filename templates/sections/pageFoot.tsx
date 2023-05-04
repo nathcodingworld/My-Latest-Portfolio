@@ -1,4 +1,4 @@
-import style from '@styles/layout.module.scss'  
+import style from '@styles/footer.module.scss'  
 import Image from 'next/image'
 import photo from '@assets/nathlogo.png' 
 import facebook from '@assets/facebook.png' 

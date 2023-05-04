@@ -1,4 +1,4 @@
-import '@styles/globals.scss'
+import '@styles/home.scss'
 import type { AppProps } from 'next/app'
 import { SnackbarProvider } from "notistack";
 

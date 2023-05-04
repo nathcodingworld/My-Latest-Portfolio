@@ -1,0 +1,83 @@
+@use '../../abstract/breakpoints' as bp; 
+
+
+.About{
+    display: flex;
+    flex-direction: column;
+    padding: 0 12px;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    &Detail{
+        display: flex;
+        flex-direction: column;
+        padding: 0 12px; 
+        row-gap: 20px;
+        @include bp.landscape(850px) {
+            row-gap: 8px; 
+        }
+        & h2 {
+            font-size: 58px;
+            line-height: 68px;
+            @include bp.landscape(850px) {
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+        & p {
+            @include bp.landscape(850px) {
+                font-size: 15px;
+                line-height: 24px;
+            }
+        }
+    }
+    &Btns {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        column-gap: 20px;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 12px;
+        & button {
+            font-size: 16px;
+            padding: 5px;
+            background-color: transparent;
+            border: none;
+            &:hover span, 
+            &:has(.active) {
+                width: 35px; 
+            }
+        }
+        & span { 
+            display: block;
+            height: 4px;
+            margin-top: 8px;
+            width: 0;
+            background: var(--primary);
+            transition: width 200ms ease-in-out;
+        }
+    }
+    &Aditional {
+        width: 100%;
+        padding: 0 12px;
+        & .detul, & .detul > div {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px; 
+        }
+        & .detul {
+            @include bp.landscape(850px) {
+                flex-direction: row;
+                column-gap: 20px;
+            }
+        }
+        & .detli p:first-child {
+            color: var(--primary);
+        }
+        & .detli p { 
+            font-size: 16px;
+            line-height: 23px;
+        }
+    }
+}

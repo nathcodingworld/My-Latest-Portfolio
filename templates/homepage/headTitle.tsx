@@ -1,5 +1,5 @@
 import { Noto_Serif_Hebrew } from "next/font/google"
-import style from "@styles/components.module.scss"
+import style from "@styles/header.module.scss"
 
 const font = Noto_Serif_Hebrew({ subsets: ['hebrew'], weight:"400" })
 

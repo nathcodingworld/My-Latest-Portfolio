@@ -1,5 +1,5 @@
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide'
-import style from '@styles/Body.module.scss'
+import style from '@styles/reference.module.scss'
 import ql from '@assets/ql.png' 
 import qr from '@assets/qr.png' 
 import ArrowLeft from '@assets/ArrowLeft.png'  

@@ -19,7 +19,7 @@
       "@assets/*": ["./public/*"],
       "@scripts/*": ["./scripts/*"],
       "@templates/*": ["./templates/layout/*", "./templates/homepage/*", "./templates/sections/*"],
-      "@styles/*": ["./styles/*", "./styles/sections/*"], 
+      "@styles/*": ["./styles/pages/home/*"], 
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

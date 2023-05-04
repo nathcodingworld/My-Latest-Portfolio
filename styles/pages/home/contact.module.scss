@@ -1,0 +1,105 @@
+
+@use '../../abstract/breakpoints' as bp;
+@use '../../utilities/mixins' as mixn;
+@import '../../components/button' ;
+
+.Contact {
+    z-index: 30;
+    &Detail {
+        & h1 {
+            @include bp.landscape(850px) {
+                font-size: 30px; 
+            }
+        }
+        & p {
+            max-width: 70%;
+            margin: 12px 0;
+            @include bp.landscape(850px) {
+                margin: 0; 
+            }
+        }
+        & ul {
+            margin: 20px 0;
+            list-style: none;
+            @include bp.portrait(744px) {
+                margin: 10px 0; 
+            }
+            & li {
+                margin: 12px 0;
+                @include bp.portrait(744px) {
+                    margin: 8px 0; 
+                }
+            }
+        }
+        & button {
+            @extend  .PrimaryButton;  
+            @include bp.breakpoint(850px) {
+                margin-top: 0;
+                height: 35px;
+                width: 180px;
+            }
+        }
+        
+    }
+    &Form { 
+        z-index: 40;
+        margin-top: 60px;
+        & div {
+            color: var(--error); 
+        }
+        & form {
+            @include mixn.Col(center, flex-start); 
+        }
+        & input {
+            height: 43px;
+            width: 500px;
+            background-color: #A0AEC0;
+            border-radius: 4px;
+            border: none;
+            padding: 5px 12px;
+            margin: 12px 0;
+            @include bp.portrait(744px) {
+                width: 100%;
+                margin: 5px 0;
+                height: 35px;
+                padding: 4px 12px; 
+            }
+            @include bp.landscape(850px) {
+                width: 250px; 
+                height: 30px; 
+                padding: 4px 12px; 
+                margin: 8px 0; 
+            }
+        }
+        & textarea {
+            height: 220px;
+            width: 500px;
+            background-color: #A0AEC0;
+            border-radius: 4px;
+            border: none;
+            padding: 12px;
+            margin: 12px 0;
+            @include bp.portrait(744px) {
+                width: 100%;
+                margin: 5px 0;
+                height: 120px; 
+                padding: 4px 12px;
+            }
+            @include bp.landscape(850px) {
+                width: 250px; 
+                height: 110px; 
+                margin: 8px 0;
+            }
+        }
+        & button { 
+            @extend  .PrimaryButton;
+            margin-left: 300px;  
+            @include bp.breakpoint(850px) {
+                margin-left: 0;  
+                margin-top: 8px;
+                height: 35px;
+                width: 180px;
+            }
+        }
+    }
+}

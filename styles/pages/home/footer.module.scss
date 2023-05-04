@@ -1,0 +1,57 @@
+@use  '../../abstract/breakpoints' as bp;
+@use '../../utilities/mixins' as mixn; 
+
+@import '../../utilities/extends';
+.Footer {  
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    height: 100%;
+    &Navs {
+        height: max-content;
+        width: 100%;
+        background-color: #101114; 
+        & > div {
+            @extend .container;
+            padding-top: 30px;
+            @include mixn.Row;
+            @include bp.portrait(744px) {
+                flex-direction: column;
+            }
+            & > div:last-child {
+                flex-grow: 1;
+                @include mixn.Row(flex-end, flex-start); 
+                @include bp.breakpoint(850px) {
+                    display: none;
+                }
+                column-gap: 80px; 
+            } 
+        }
+    }
+    &Social {
+        width: 100%;
+        margin: 12px 0;
+        @include mixn.Row(space-around); 
+        pointer-events:all;
+    }
+    &Links {
+        @include mixn.Col(flex-start, flex-start); 
+        row-gap: 20px; 
+        font-size: 25px;
+        & a {
+            pointer-events: auto;
+        }
+    }
+    &Shoe {
+        width: 100%;
+        background-color: black;
+        height: 40px;
+        @include mixn.Row; 
+        & p {
+            font-size: 16px;
+        }
+    }
+}
+ 

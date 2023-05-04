@@ -1,0 +1,54 @@
+@use '../../abstract/breakpoints' as bp;
+@use '../../utilities/mixins' as mixn;
+
+@import '../../utilities/extends';
+
+.AboutRow {
+    @include mixn.Row; 
+    @extend .container;
+    width: 100%;
+    @include bp.breakpoint(1133px) {
+        flex-direction: column;
+    }; 
+    & > div:first-child {
+        width: 500px; 
+        @include bp.landscape(1133px) {
+            display: none;
+        };
+        @include bp.portrait(1133px) {
+            width: 100%; 
+        };
+    }
+    & > div:last-child { 
+        width: calc(100% - 500px); 
+        @include bp.breakpoint(1133px) {
+            width: calc(100%);  
+        }; 
+    }
+}
+.ContactRow {
+    @include mixn.Row; 
+    @extend .container;
+    @include bp.portrait(744px) {
+        flex-direction: column;
+    }
+    width: 100%;
+    & > div { 
+        margin: 60px auto; 
+        margin-bottom: 0;
+        @include bp.portrait(744px) {
+            margin: 20px 0;  
+            width: 100%;
+            &:last-child {
+                margin-top: 0;
+            }
+            &:first-child {
+                margin-bottom: 0;
+            }
+        }
+        @include bp.landscape(850px) {
+            margin: 25px auto;  
+
+        }
+    } 
+}

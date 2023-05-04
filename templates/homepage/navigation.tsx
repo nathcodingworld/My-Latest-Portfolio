@@ -2,7 +2,7 @@
 import Image from 'next/image' 
 import Logo from '@assets/nathlogo.png' 
 import NavigationLinks from './components/navigationLinks'
-import style from '@styles/components.module.scss'
+import style from '@styles/header.module.scss'
 import { RefObject } from 'react'
 import { IParallax } from '@react-spring/parallax'
 

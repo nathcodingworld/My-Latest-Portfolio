@@ -1,6 +1,6 @@
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
-import style from '@styles/Body.module.scss'
+import style from '@styles/contact.module.scss'
 import { useSnackbar } from 'notistack';
 
 export default function ContactForm () {

@@ -6,7 +6,7 @@ import neaxtimg from '@assets/neaxtimg.png'
 import mainprimitive from '@assets/mainprimitive.png' 
 import nathport from '@assets/nathport.png' 
 import Image from "next/image";
-import style from '@styles/Body.module.scss' 
+import style from '@styles/works.module.scss' 
 
 interface PageProps {
   offset: number

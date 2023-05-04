@@ -1,0 +1,15 @@
+.Main {
+    height: 200dvh;    
+    width: 100% ;
+    &Container {
+        display: flex;
+        flex-direction: row; 
+        height: 100dvh;
+    }
+} 
+
+.Section {
+    height: 100dvh;
+    width: 100%;
+    background: black;
+}

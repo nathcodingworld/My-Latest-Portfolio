@@ -1,6 +1,6 @@
 
 
-import style from '@styles/layout.module.scss'
+import style from '@styles/section.module.scss'
 
 interface contactRowType {
     children: React.ReactNode; 

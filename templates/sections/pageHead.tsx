@@ -1,5 +1,5 @@
 
-import style from '@styles/layout.module.scss' 
+import style from '@styles/header.module.scss' 
 import Image from 'next/image'
 import photo from '@assets/nath.png' 
 import HeadTitle from '../homepage/headTitle'

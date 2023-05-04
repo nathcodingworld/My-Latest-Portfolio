@@ -1,7 +1,5 @@
 
-import style from '@styles/Body.module.scss'
-import photo from '@assets/nath.png' 
-import Image from 'next/image'
+import style from '@styles/media.module.scss' 
 
 export default function FullBody() {
     return (
